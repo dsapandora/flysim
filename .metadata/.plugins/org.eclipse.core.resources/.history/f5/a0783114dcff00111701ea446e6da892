@@ -1,0 +1,83 @@
+package org.flysim.Simulator;
+
+public class Simulator implements Runnable {
+	
+	//Constants
+	public double mass = 1.0;	//kg
+	public double g = 9.8;		//m/s^2
+	
+	//Situation
+	public Vector position = new Vector (0,0,0);		//m, absolute
+	public Vector velocity = new Vector (0,0,0);		//m/s, relative
+	public Vector accelerometer = new Vector (0,0,1);	//gravity vector, in g
+	public Vector gyroscope = new Vector (0,0,0);
+	public Vector compass = new Vector (0,1,0);			//magnetic field vector
+	public double usForward;	//m, ultrasonic sensor
+	public double usBackward;	//m
+	public double usLeft;		//m
+	public double usRight;		//m
+	public double usBottom;		//m - height eq
+	
+	public double roll = 0;		// horizontal, roll<0 - tilt to left, roll>0 - tilt to right. -90 .. +90
+	public double pitch = 0;	// horizontal, pitch<0 - tilt to back, pitch>0 - tilt to forward. -90 .. +90
+	public double yaw = 0;		// head to North. 0 - North, 90 - East, 180 - South, 270 - West
+	
+	public double time;
+	private double lastTimeCalc;
+	
+	//Control Data
+	public double throttle = 50;		//0% (down) - 50% (stay) - 100% (up)
+	public double elevator = 50;		//0% (backward) - 50% (stay) - 100% (forward)
+	public double aileron = 50;			//0% (left) - 50% (stay) - 100% (right)
+	public double rudder = 50;			//0% (CCW rotation) - 50% (no rotation) - 100%(CW rotation)
+
+	public Simulator() {
+		getTime();
+		lastTimeCalc = time;
+	}
+
+	public void run() {
+		while (true) {
+			getTime();
+			getControlData();
+			calculateSituation();
+		}
+	}
+	
+	public void getTime() {
+		time = System.currentTimeMillis()/1000.0;
+		System.out.printf("%f\n",time);
+	}
+	
+	public void getControlData() {
+		//Nothing to do yet
+	}
+	
+//			 y
+//	         ^  forward
+//           |
+//	         |
+//	left     |     right
+//	---------+-------->x
+//	         |
+//	         |
+//	         |
+//	         |  backward
+	
+	public void calculateSituation() {
+		double dT = time - lastTimeCalc;
+		System.out.printf("dT = %f\n",dT);
+
+		Vector f = new Vector((aileron - 50) / 50, (elevator - 50) / 50, (throttle) / 50);
+		
+		//F = m*a -> a = F/m
+		//V = V0 + a*dt
+		Vector a = f.mul(1/mass); //a = F/m
+		
+		velocity = velocity.plus(a.mul(dT)); //V = V0 + a*dt
+		position = position.plus(velocity.mul(dT)); //x = x0 + V*dt
+		
+		lastTimeCalc = time;
+	}
+	
+}

@@ -1,0 +1,6 @@
+package org.flysim.AI;
+
+public class AI {
+	public Object<FlyControlInterface> control;
+
+}

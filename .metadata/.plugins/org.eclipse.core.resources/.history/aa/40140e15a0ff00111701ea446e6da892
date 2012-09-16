@@ -1,0 +1,27 @@
+package org.flysim.Simulator;
+
+public class Vector {
+	public double x;
+	public double y;
+	public double z;
+	
+	public Vector() {
+	}
+	
+	public Vector(double px, double py, double pz) {
+		this.x = px;
+		this.y = py;
+		this.z = pz;
+	}
+	
+	public Vector plus(Vector a) {
+		Vector result = new Vector(this.x+a.x, this.y+a.y, this.z+a.z);
+		return result;
+	}
+	
+	public Vector neg() {
+		Vector result = new Vector(0-this.x, 0-this.y, 0-this.z);
+		return result;
+	}
+
+}

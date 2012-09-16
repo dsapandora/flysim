@@ -1,0 +1,8 @@
+package org.flysim.AI;
+
+import org.flysim.Simulator.FlyControlInterface;
+
+public class AI {
+	public FlyControlInterface control;
+
+}

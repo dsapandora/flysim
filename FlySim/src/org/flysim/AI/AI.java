@@ -1,0 +1,32 @@
+package org.flysim.AI;
+
+import org.flysim.Simulator.FlyControlInterface;
+import org.flysim.Simulator.FlySensorsInterface;
+
+public class AI implements Runnable{
+	
+	private FlyControlInterface control;
+	private FlySensorsInterface sensors;
+
+	public AI(FlyControlInterface pControl, FlySensorsInterface pSensors) {
+		control = pControl;
+		sensors = pSensors;
+	}
+	
+	public void run() {
+		while (true) {
+			getSituation();
+			calcControls();
+		}
+	}
+	
+	private void getSituation() {
+		//System.out.println("AI getSituation");
+
+	}
+	
+	private void calcControls() {
+		//System.out.println("AI calcControls");
+		
+	}
+}

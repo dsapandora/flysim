@@ -1,0 +1,73 @@
+!SESSION 2012-09-15 23:20:30.954 -----------------------------------------------
+eclipse.buildId=M20110909-1335
+java.version=1.6.0_24
+java.vendor=Sun Microsystems Inc.
+BootLoader constants: OS=linux, ARCH=x86_64, WS=gtk, NL=en_US
+Command-line arguments:  -data /home/lim/Documents/Projects/FlySim -os linux -ws gtk -arch x86_64
+
+!ENTRY org.eclipse.jdt.ui 4 10001 2012-09-16 12:33:39.416
+!MESSAGE Internal Error
+!STACK 1
+Java Model Exception: Java Model Status [Timed out while retrieving the attached javadoc for String [in String.class [in java.lang [in /usr/lib/jvm/java-6-openjdk/jre/lib/rt.jar]]] ]
+	at org.eclipse.jdt.internal.core.JavaElement.getURLContents(JavaElement.java:808)
+	at org.eclipse.jdt.internal.core.BinaryType.getJavadocContents(BinaryType.java:1037)
+	at org.eclipse.jdt.internal.core.BinaryMethod.getAttachedJavadoc(BinaryMethod.java:643)
+	at org.eclipse.jdt.internal.ui.text.javadoc.JavadocContentAccess2.getHTMLContent(JavadocContentAccess2.java:462)
+	at org.eclipse.jdt.internal.ui.text.java.ProposalInfo.extractJavadoc(ProposalInfo.java:95)
+	at org.eclipse.jdt.internal.ui.text.java.ProposalInfo.computeInfo(ProposalInfo.java:75)
+	at org.eclipse.jdt.internal.ui.text.java.ProposalInfo.getInfo(ProposalInfo.java:58)
+	at org.eclipse.jdt.internal.ui.text.java.AbstractJavaCompletionProposal.getAdditionalProposalInfo(AbstractJavaCompletionProposal.java:555)
+	at org.eclipse.jface.text.contentassist.AdditionalInfoController$3.run(AdditionalInfoController.java:106)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+!SUBENTRY 1 org.eclipse.jdt.core 4 1012 2012-09-16 12:33:39.426
+!MESSAGE Timed out while retrieving the attached javadoc for String [in String.class [in java.lang [in /usr/lib/jvm/java-6-openjdk/jre/lib/rt.jar]]] 
+!SESSION 2012-09-16 15:47:33.606 -----------------------------------------------
+eclipse.buildId=M20110909-1335
+java.version=1.6.0_24
+java.vendor=Sun Microsystems Inc.
+BootLoader constants: OS=linux, ARCH=x86_64, WS=gtk, NL=en_US
+Command-line arguments:  -data /home/lim/Documents/Projects/FlySim -os linux -ws gtk -arch x86_64
+
+!ENTRY org.eclipse.jdt.core 4 969 2012-09-16 17:02:51.030
+!MESSAGE getGy [in FlySensorsInterface [in [Working copy] FlySensorsInterface.java [in org.flysim.Simulator [in src [in FlySim]]]]] does not exist
+
+!ENTRY org.eclipse.jdt.core 4 1012 2012-09-16 17:05:57.817
+!MESSAGE Timed out while retrieving the attached javadoc for Map {key=Ljavax/swing/text/html/Map;} [in Map.class [in javax.swing.text.html [in /usr/lib/jvm/java-6-openjdk/jre/lib/rt.jar]]] 
+
+!ENTRY org.eclipse.jdt.core 4 969 2012-09-16 17:06:44.636
+!MESSAGE getUsF [in FlySensorsInterface [in [Working copy] FlySensorsInterface.java [in org.flysim.Simulator [in src [in FlySim]]]]] does not exist
+
+!ENTRY org.eclipse.jdt.core 4 969 2012-09-16 17:06:44.639
+!MESSAGE getUsFo [in FlySensorsInterface [in [Working copy] FlySensorsInterface.java [in org.flysim.Simulator [in src [in FlySim]]]]] does not exist
+
+!ENTRY org.eclipse.jdt.core 4 969 2012-09-16 17:06:44.639
+!MESSAGE getU [in FlySensorsInterface [in [Working copy] FlySensorsInterface.java [in org.flysim.Simulator [in src [in FlySim]]]]] does not exist
+
+!ENTRY org.eclipse.jdt.core 4 969 2012-09-16 17:06:51.149
+!MESSAGE getUsBo [in FlySensorsInterface [in [Working copy] FlySensorsInterface.java [in org.flysim.Simulator [in src [in FlySim]]]]] does not exist
+
+!ENTRY org.eclipse.jdt.core 4 1012 2012-09-16 17:09:29.249
+!MESSAGE Timed out while retrieving the attached javadoc for Runnable {key=Ljava/lang/Runnable;} [in Runnable.class [in java.lang [in /usr/lib/jvm/java-6-openjdk/jre/lib/rt.jar]]] 
+
+!ENTRY org.eclipse.jdt.core 4 1012 2012-09-16 17:09:55.391
+!MESSAGE Timed out while retrieving the attached javadoc for Override {key=Ljava/lang/Override;} [in Override.class [in java.lang [in /usr/lib/jvm/java-6-openjdk/jre/lib/rt.jar]]] 
+
+!ENTRY org.eclipse.jdt.core 4 1012 2012-09-16 17:19:20.882
+!MESSAGE Timed out while retrieving the attached javadoc for Override {key=Ljava/lang/Override;} [in Override.class [in java.lang [in /usr/lib/jvm/java-6-openjdk/jre/lib/rt.jar]]] 
+
+!ENTRY org.eclipse.jdt.ui 4 10001 2012-09-16 17:34:53.379
+!MESSAGE Internal Error
+!STACK 1
+Java Model Exception: Java Model Status [Timed out while retrieving the attached javadoc for Thread [in Thread.class [in java.lang [in /usr/lib/jvm/java-6-openjdk/jre/lib/rt.jar]]] ]
+	at org.eclipse.jdt.internal.core.JavaElement.getURLContents(JavaElement.java:808)
+	at org.eclipse.jdt.internal.core.BinaryType.getJavadocContents(BinaryType.java:1037)
+	at org.eclipse.jdt.internal.core.BinaryMethod.getAttachedJavadoc(BinaryMethod.java:643)
+	at org.eclipse.jdt.internal.ui.text.javadoc.JavadocContentAccess2.getHTMLContent(JavadocContentAccess2.java:462)
+	at org.eclipse.jdt.internal.ui.text.java.ProposalInfo.extractJavadoc(ProposalInfo.java:95)
+	at org.eclipse.jdt.internal.ui.text.java.ProposalInfo.computeInfo(ProposalInfo.java:75)
+	at org.eclipse.jdt.internal.ui.text.java.ProposalInfo.getInfo(ProposalInfo.java:58)
+	at org.eclipse.jdt.internal.ui.text.java.AbstractJavaCompletionProposal.getAdditionalProposalInfo(AbstractJavaCompletionProposal.java:555)
+	at org.eclipse.jface.text.contentassist.AdditionalInfoController$3.run(AdditionalInfoController.java:106)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+!SUBENTRY 1 org.eclipse.jdt.core 4 1012 2012-09-16 17:34:53.390
+!MESSAGE Timed out while retrieving the attached javadoc for Thread [in Thread.class [in java.lang [in /usr/lib/jvm/java-6-openjdk/jre/lib/rt.jar]]] 

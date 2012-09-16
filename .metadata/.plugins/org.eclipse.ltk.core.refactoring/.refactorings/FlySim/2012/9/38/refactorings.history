@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename field &apos;cubeAppearance&apos; in &apos;org.flysim.UI.Visualizator&apos; to &apos;copterEdgesAppearance&apos;&#x0A;- Original project: &apos;FlySim&apos;&#x0A;- Original element: &apos;org.flysim.UI.Visualizator.cubeAppearance&apos;&#x0A;- Renamed element: &apos;org.flysim.UI.Visualizator.copterEdgesAppearance&apos;&#x0A;- Update references to refactored element&#x0A;- Update textual occurrences in comments and strings" delegate="false" deprecate="false" description="Rename field &apos;cubeAppearance&apos;" flags="589826" getter="false" id="org.eclipse.jdt.ui.rename.field" input="/src&lt;org.flysim.UI{Visualizator.java[Visualizator^cubeAppearance" name="copterEdgesAppearance" references="true" setter="false" stamp="1347828396531" textual="false" version="1.0"/>
+</session>

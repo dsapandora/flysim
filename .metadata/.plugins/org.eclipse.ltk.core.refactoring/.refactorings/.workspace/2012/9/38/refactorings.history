@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Delete resource &apos;FlySim/src/org/flysim/UI/Hello3d.java&apos;" deleteContents="false" description="Delete resource &apos;FlySim/src/org/flysim/UI/Hello3d.java&apos;" element1="/FlySim/src/org/flysim/UI/Hello3d.java" flags="7" id="org.eclipse.ltk.core.refactoring.delete.resources" resources="1" stamp="1347821694825"/>
+</session>

@@ -1,0 +1,15 @@
+package org.flysim.AI;
+
+import org.flysim.Simulator.FlyControlInterface;
+import org.flysim.Simulator.FlySensorsInterface;
+
+public class AI implements Runnable{
+	public FlyControlInterface control;
+	public FlySensorsInterface sensors;
+	
+
+	public void run() {
+		// TODO Auto-generated method stub
+		
+	}
+}

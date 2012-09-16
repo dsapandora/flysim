@@ -1,0 +1,56 @@
+package org.flysim.Simulator;
+
+public class Simulator implements Runnable {
+	
+	//Constants
+	public double mass = 1.0;	//kg
+	public double g = 9.8;		//m/s^2
+	
+	//Situation
+	public Vector position;		//m
+	public Vector velocity;
+	public Vector accelerometer;
+	public Vector gyroscope;
+	public Vector compass;
+	public double uvForward;	//m
+	public double uvBackward;	//m
+	public double uvLeft;		//m
+	public double uvRight;		//m
+	public double uvBottom;		//m - height eq
+	
+	public double roll = 0;		// horizontal, roll<0 - tilt to left, roll>0 - tilt to right. -90 .. +90
+	public double pitch = 0;	// horizontal, pitch<0 - tilt to back, pitch>0 - tilt to forward. -90 .. +90
+	public double yaw = 0;		// head to North. 0 - North, 90 - East, 180 - South, 270 - West
+	
+	public double time;
+	private double lastTimeCalc;
+	
+	//Control Data
+	public double throttle;		//0% (down) - 50% (stay) - 100% (up)
+	public double elevator;		//0% (backward) - 50% (stay) - 100% (forward)
+	public double aileron;		//0% (left) - 50% (stay) - 100% (right)
+	public double rudder;		//0% (CCW rotation) - 50% (no rotation) - 100%(CW rotation)
+
+	public Simulator() {}
+
+	public void run() {
+		while (true) {
+			getTime();
+			getControlData();
+			calculateSituation();
+		}
+	}
+	
+	public void getTime() {
+		time = System.currentTimeMillis()/1000;
+	}
+	
+	public void getControlData() {
+		//Nothing to do yet
+	}
+	
+	public void calculateSituation() {
+		
+	}
+	
+}
