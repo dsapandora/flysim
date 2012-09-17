@@ -8,7 +8,7 @@ public class Simulator implements Runnable, FlyControlInterface, FlySensorsInter
 	public double kar = 0.5;	//Air resistance coefficient
 	
 	//Situation
-	public Vector position = new Vector (0,0,1);		//m, absolute
+	public Vector position = new Vector (0,0,0.1);		//m, absolute
 	public Vector velocity = new Vector (0,0,0);		//m/s, relative
 	public Vector accelerometer = new Vector (0,0,1);	//gravity vector, in g
 	public Vector gyroscope = new Vector (0,0,0);		//x - pitch, y - roll, z - yaw; radians
@@ -25,16 +25,18 @@ public class Simulator implements Runnable, FlyControlInterface, FlySensorsInter
 	
 	public double time;
 	private double lastTimeCalc;
+	private double startTime;
 	
 	//Control Data
-	public double throttle = 50.0;		//0% (down) - 50% (stay) - 100% (up)
-	public double elevator = 50.1;		//0% (backward) - 50% (stay) - 100% (forward)
+	public double throttle = 50;		//0% (down) - 50% (stay) - 100% (up)
+	public double elevator = 50;		//0% (backward) - 50% (stay) - 100% (forward)
 	public double aileron = 50;			//0% (left) - 50% (stay) - 100% (right)
 	public double rudder = 50;			//0% (CCW rotation) - 50% (no rotation) - 100%(CW rotation)
 
 	public Simulator() {
 		getTime();
 		lastTimeCalc = time;
+		startTime = time;
 	}
 
 	public void run() {
@@ -142,7 +144,7 @@ public class Simulator implements Runnable, FlyControlInterface, FlySensorsInter
 	}
 
 	public double getSystemTime() {
-		return lastTimeCalc;
+		return lastTimeCalc - startTime;
 	}
 	
 }
