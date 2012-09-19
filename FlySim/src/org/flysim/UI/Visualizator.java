@@ -60,6 +60,12 @@ public class Visualizator extends Frame implements Runnable {
 	public void run() {
 		while (true) {
 			getCopterCoord();
+			try {
+				Thread.sleep(100);
+			} catch (InterruptedException e) {
+				// TODO Auto-generated catch block
+				e.printStackTrace();
+			}
 			//System.out.println("VT");
 		}
 	}
@@ -118,6 +124,7 @@ public class Visualizator extends Frame implements Runnable {
         setLayout(new BorderLayout());
         add("Center", canvas3d);
         setVisible(true);
+
     }
 
     private void setupAppearance(Appearance app, Color col) {

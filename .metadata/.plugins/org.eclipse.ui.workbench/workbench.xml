@@ -47,15 +47,15 @@
 </editor>
 <editor activePart="true" focus="true" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="Visualizator.java" partName="Visualizator.java" path="/home/lim/Documents/Projects/flysim/FlySim/src/org/flysim/UI/Visualizator.java" title="Visualizator.java" tooltip="FlySim/src/org/flysim/UI/Visualizator.java" workbook="DefaultEditorWorkbook">
 <input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/FlySim/src/org/flysim/UI/Visualizator.java"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="1438" selectionTopPixel="0"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="3750" selectionTopPixel="0"/>
 </editor>
-<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="Simulator.java" partName="Simulator.java" path="/home/lim/Documents/Projects/FlySim/FlySim/src/org/flysim/Simulator/Simulator.java" title="Simulator.java" tooltip="FlySim/src/org/flysim/Simulator/Simulator.java" workbook="DefaultEditorWorkbook">
+<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="Simulator.java" partName="Simulator.java" path="/home/lim/Documents/Projects/flysim/FlySim/src/org/flysim/Simulator/Simulator.java" title="Simulator.java" tooltip="FlySim/src/org/flysim/Simulator/Simulator.java" workbook="DefaultEditorWorkbook">
 <input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/FlySim/src/org/flysim/Simulator/Simulator.java"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="1293" selectionTopPixel="292"/>
+<editorState selectionHorizontalPixel="0" selectionLength="7" selectionOffset="1382" selectionTopPixel="244"/>
 </editor>
-<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="AI.java" partName="AI.java" path="/home/lim/Documents/Projects/FlySim/FlySim/src/org/flysim/AI/AI.java" title="AI.java" tooltip="FlySim/src/org/flysim/AI/AI.java" workbook="DefaultEditorWorkbook">
+<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="AI.java" partName="AI.java" path="/home/lim/Documents/Projects/flysim/FlySim/src/org/flysim/AI/AI.java" title="AI.java" tooltip="FlySim/src/org/flysim/AI/AI.java" workbook="DefaultEditorWorkbook">
 <input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/FlySim/src/org/flysim/AI/AI.java"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="561" selectionTopPixel="113"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="876" selectionTopPixel="414"/>
 </editor>
 <editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="FlySensorsInterface.java" partName="FlySensorsInterface.java" path="/home/lim/Documents/Projects/flysim/FlySim/src/org/flysim/Simulator/FlySensorsInterface.java" title="FlySensorsInterface.java" tooltip="FlySim/src/org/flysim/Simulator/FlySensorsInterface.java" workbook="DefaultEditorWorkbook">
 <input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/FlySim/src/org/flysim/Simulator/FlySensorsInterface.java"/>
@@ -84,6 +84,7 @@
 <element path="/FlySim/src"/>
 <element path="/FlySim/src/org"/>
 <element path="/FlySim/src/org/flysim"/>
+<element path="/FlySim/src/org/flysim/AI"/>
 <element path="/FlySim/src/org/flysim/Launcher"/>
 <element path="/FlySim/src/org/flysim/Simulator"/>
 <element path="/FlySim/src/org/flysim/UI"/>
@@ -153,7 +154,7 @@
 <viewState/>
 </view>
 </views>
-<perspectives activePart="org.eclipse.ui.views.ResourceNavigator" activePerspective="org.eclipse.jdt.ui.JavaPerspective">
+<perspectives activePart="org.eclipse.jdt.ui.CompilationUnitEditor" activePerspective="org.eclipse.jdt.ui.JavaPerspective">
 <perspective editorAreaTrimState="2" editorAreaVisible="1" fixed="0" version="0.016">
 <descriptor class="org.eclipse.jdt.internal.ui.JavaPerspectiveFactory" id="org.eclipse.jdt.ui.JavaPerspective" label="Java"/>
 <alwaysOnActionSet id="org.eclipse.ui.cheatsheets.actionSet"/>
@@ -381,162 +382,163 @@
 <workingSets/>
 <navigationHistory>
 <editors>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/FlySim/src/org/flysim/Launcher/Launcher.java"/>
 <editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/FlySim/src/org/flysim/Simulator/Simulator.java"/>
 <editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/FlySim/src/org/flysim/UI/Visualizator.java"/>
 <editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/FlySim/src/org/flysim/Simulator/FlySensorsInterface.java"/>
 <editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/FlySim/src/org/flysim/Simulator/FlyControlInterface.java"/>
 <editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/FlySim/src/org/flysim/Simulator/Vector.java"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/FlySim/src/org/flysim/Simulator/Simulator.java"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/FlySim/src/org/flysim/AI/AI.java"/>
 </editors>
-<item historyLabel="Launcher.java" index="0">
-<position info="not_deleted" x="562" y="0"/>
-</item>
-<item historyLabel="Visualizator.java" index="2">
-<position info="not_deleted" x="1368" y="0"/>
-</item>
-<item historyLabel="Visualizator.java" index="2">
-<position/>
-</item>
-<item historyLabel="Simulator.java" index="1">
-<position info="not_deleted" x="2816" y="0"/>
-</item>
-<item historyLabel="Visualizator.java" index="2">
-<position/>
-</item>
-<item historyLabel="Visualizator.java" index="2">
-<position/>
-</item>
-<item historyLabel="Visualizator.java" index="2">
-<position info="not_deleted" x="4097" y="0"/>
-</item>
-<item historyLabel="Visualizator.java" index="2">
-<position info="not_deleted" x="4965" y="0"/>
-</item>
-<item historyLabel="Visualizator.java" index="2">
-<position info="not_deleted" x="4973" y="0"/>
-</item>
-<item historyLabel="Visualizator.java" index="2">
-<position info="not_deleted" x="4977" y="0"/>
-</item>
-<item historyLabel="Visualizator.java" index="2">
-<position info="not_deleted" x="3051" y="0"/>
-</item>
-<item historyLabel="Visualizator.java" index="2">
-<position info="not_deleted" x="980" y="0"/>
-</item>
-<item historyLabel="Visualizator.java" index="2">
-<position info="not_deleted" x="3148" y="0"/>
-</item>
-<item historyLabel="Visualizator.java" index="2">
-<position info="not_deleted" x="2388" y="0"/>
-</item>
-<item historyLabel="Visualizator.java" index="2">
-<position/>
-</item>
-<item historyLabel="Visualizator.java" index="2">
-<position info="not_deleted" x="2997" y="0"/>
-</item>
-<item historyLabel="Visualizator.java" index="2">
-<position info="not_deleted" x="5112" y="0"/>
-</item>
-<item historyLabel="Visualizator.java" index="2">
-<position info="not_deleted" x="5119" y="0"/>
-</item>
-<item historyLabel="Visualizator.java" index="2">
-<position info="not_deleted" x="5123" y="0"/>
-</item>
-<item historyLabel="Visualizator.java" index="2">
-<position info="not_deleted" x="5127" y="0"/>
-</item>
-<item historyLabel="Visualizator.java" index="2">
-<position info="not_deleted" x="5123" y="0"/>
-</item>
-<item historyLabel="Visualizator.java" index="2">
+<item historyLabel="Visualizator.java" index="1">
 <position info="not_deleted" x="5515" y="0"/>
 </item>
-<item historyLabel="Simulator.java" index="1">
-<position info="not_deleted" x="2816" y="0"/>
-</item>
-<item historyLabel="Visualizator.java" index="2">
-<position info="not_deleted" x="5515" y="0"/>
-</item>
-<item historyLabel="Visualizator.java" index="2">
+<item historyLabel="Visualizator.java" index="1">
 <position info="not_deleted" x="5562" y="0"/>
 </item>
-<item historyLabel="Visualizator.java" index="2">
+<item historyLabel="Visualizator.java" index="1">
 <position info="not_deleted" x="5557" y="0"/>
 </item>
-<item historyLabel="Visualizator.java" index="2">
+<item historyLabel="Visualizator.java" index="1">
 <position info="not_deleted" x="5561" y="0"/>
 </item>
-<item historyLabel="Visualizator.java" index="2">
+<item historyLabel="Visualizator.java" index="1">
 <position info="not_deleted" x="5565" y="0"/>
 </item>
-<item historyLabel="Visualizator.java" index="2">
+<item historyLabel="Visualizator.java" index="1">
 <position info="not_deleted" x="5561" y="0"/>
 </item>
-<item historyLabel="Visualizator.java" index="2">
+<item historyLabel="Visualizator.java" index="1">
 <position info="not_deleted" x="2727" y="0"/>
 </item>
-<item historyLabel="Visualizator.java" index="2">
+<item historyLabel="Visualizator.java" index="1">
 <position info="not_deleted" x="3460" y="0"/>
 </item>
-<item historyLabel="Visualizator.java" index="2">
+<item historyLabel="Visualizator.java" index="1">
 <position info="not_deleted" x="3267" y="0"/>
 </item>
-<item historyLabel="Visualizator.java" index="2">
+<item historyLabel="Visualizator.java" index="1">
 <position info="not_deleted" x="3360" y="20"/>
 </item>
-<item historyLabel="Visualizator.java" index="2">
+<item historyLabel="Visualizator.java" index="1">
 <position info="not_deleted" x="3349" y="0"/>
 </item>
-<item historyLabel="Visualizator.java" index="2">
+<item historyLabel="Visualizator.java" index="1">
 <position info="not_deleted" x="3446" y="0"/>
 </item>
-<item historyLabel="Visualizator.java" index="2">
+<item historyLabel="Visualizator.java" index="1">
 <position info="not_deleted" x="3458" y="0"/>
 </item>
-<item historyLabel="Visualizator.java" index="2">
+<item historyLabel="Visualizator.java" index="1">
 <position info="not_deleted" x="3502" y="0"/>
 </item>
-<item historyLabel="Visualizator.java" index="2">
+<item historyLabel="Visualizator.java" index="1">
 <position info="not_deleted" x="3842" y="0"/>
 </item>
-<item historyLabel="Visualizator.java" index="2">
+<item historyLabel="Visualizator.java" index="1">
 <position info="not_deleted" x="1847" y="0"/>
 </item>
-<item historyLabel="Visualizator.java" index="2">
+<item historyLabel="Visualizator.java" index="1">
 <position info="not_deleted" x="1360" y="0"/>
 </item>
-<item historyLabel="Visualizator.java" index="2">
+<item historyLabel="Visualizator.java" index="1">
 <position info="not_deleted" x="1640" y="0"/>
 </item>
-<item historyLabel="Simulator.java" index="1">
+<item historyLabel="Simulator.java" index="0">
 <position info="not_deleted" x="1293" y="0"/>
 </item>
-<item historyLabel="Visualizator.java" index="2">
+<item historyLabel="Visualizator.java" index="1">
 <position info="not_deleted" x="1640" y="0"/>
 </item>
-<item historyLabel="Visualizator.java" index="2">
+<item historyLabel="Visualizator.java" index="1">
 <position info="not_deleted" x="4703" y="15"/>
 </item>
-<item historyLabel="Visualizator.java" index="2">
+<item historyLabel="Visualizator.java" index="1">
 <position info="not_deleted" x="1640" y="0"/>
 </item>
-<item historyLabel="Visualizator.java" index="2">
+<item historyLabel="Visualizator.java" index="1">
 <position info="not_deleted" x="4776" y="20"/>
 </item>
-<item historyLabel="FlySensorsInterface.java" index="3">
+<item historyLabel="FlySensorsInterface.java" index="2">
 <position info="not_deleted" x="0" y="0"/>
 </item>
-<item historyLabel="FlyControlInterface.java" index="4">
+<item historyLabel="FlyControlInterface.java" index="3">
 <position info="not_deleted" x="0" y="0"/>
 </item>
-<item historyLabel="Vector.java" index="5">
+<item historyLabel="Vector.java" index="4">
 <position info="not_deleted" x="0" y="0"/>
 </item>
-<item active="true" historyLabel="Visualizator.java" index="2">
+<item historyLabel="Visualizator.java" index="1">
 <position info="not_deleted" x="1438" y="0"/>
+</item>
+<item historyLabel="Visualizator.java" index="1">
+<position info="not_deleted" x="5870" y="0"/>
+</item>
+<item historyLabel="Visualizator.java" index="1">
+<position/>
+</item>
+<item historyLabel="Simulator.java" index="5">
+<position info="not_deleted" x="312" y="0"/>
+</item>
+<item historyLabel="Visualizator.java" index="1">
+<position info="not_deleted" x="3657" y="0"/>
+</item>
+<item historyLabel="Visualizator.java" index="1">
+<position info="not_deleted" x="4487" y="0"/>
+</item>
+<item historyLabel="Simulator.java" index="5">
+<position info="not_deleted" x="312" y="0"/>
+</item>
+<item historyLabel="AI.java" index="6">
+<position info="not_deleted" x="1203" y="0"/>
+</item>
+<item historyLabel="Simulator.java" index="5">
+<position info="not_deleted" x="1606" y="0"/>
+</item>
+<item historyLabel="Visualizator.java" index="1">
+<position info="not_deleted" x="4487" y="0"/>
+</item>
+<item historyLabel="Simulator.java" index="5">
+<position info="not_deleted" x="4032" y="0"/>
+</item>
+<item historyLabel="AI.java" index="6">
+<position info="not_deleted" x="1203" y="0"/>
+</item>
+<item historyLabel="AI.java" index="6">
+<position info="not_deleted" x="703" y="0"/>
+</item>
+<item historyLabel="Simulator.java" index="5">
+<position info="not_deleted" x="4032" y="0"/>
+</item>
+<item historyLabel="AI.java" index="6">
+<position info="not_deleted" x="1015" y="0"/>
+</item>
+<item historyLabel="Simulator.java" index="5">
+<position info="not_deleted" x="1382" y="7"/>
+</item>
+<item historyLabel="AI.java" index="6">
+<position info="not_deleted" x="1015" y="0"/>
+</item>
+<item historyLabel="AI.java" index="6">
+<position/>
+</item>
+<item historyLabel="AI.java" index="6">
+<position/>
+</item>
+<item historyLabel="AI.java" index="6">
+<position/>
+</item>
+<item historyLabel="AI.java" index="6">
+<position info="not_deleted" x="675" y="0"/>
+</item>
+<item historyLabel="AI.java" index="6">
+<position info="not_deleted" x="687" y="0"/>
+</item>
+<item historyLabel="AI.java" index="6">
+<position info="not_deleted" x="876" y="0"/>
+</item>
+<item active="true" historyLabel="Visualizator.java" index="1">
+<position info="not_deleted" x="4487" y="0"/>
 </item>
 </navigationHistory>
 <input factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/" type="8"/>

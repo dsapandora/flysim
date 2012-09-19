@@ -7,8 +7,8 @@
 	<section name="InstallationDialogSettings">
 		<item value="696" key="DIALOG_WIDTH"/>
 		<item value="-272" key="DIALOG_Y_ORIGIN"/>
-		<item value="-73" key="DIALOG_X_ORIGIN"/>
 		<item value="644" key="DIALOG_HEIGHT"/>
+		<item value="-73" key="DIALOG_X_ORIGIN"/>
 		<item value="1|Sans|8.0|0|GTK|1|" key="DIALOG_FONT_NAME"/>
 	</section>
 </section>

@@ -17,7 +17,6 @@
 <fullyQualifiedTypeName name="java.awt.Color"/>
 <fullyQualifiedTypeName name="javax.media.j3d.Material"/>
 <fullyQualifiedTypeName name="com.sun.j3d.utils.geometry.Box"/>
-<fullyQualifiedTypeName name="javax.media.j3d.TransformGroup"/>
 <fullyQualifiedTypeName name="javax.media.j3d.Transform3D"/>
 <fullyQualifiedTypeName name="javax.vecmath.Vector3f"/>
 <fullyQualifiedTypeName name="javax.media.j3d.AmbientLight"/>
@@ -26,4 +25,17 @@
 <fullyQualifiedTypeName name="com.sun.j3d.utils.behaviors.mouse.MouseRotate"/>
 <fullyQualifiedTypeName name="javax.media.j3d.Node"/>
 <fullyQualifiedTypeName name="javax.media.j3d.Appearance"/>
+<fullyQualifiedTypeName name="javax.vecmath.Vector3d"/>
+<fullyQualifiedTypeName name="com.sun.j3d.utils.universe.ViewingPlatform"/>
+<fullyQualifiedTypeName name="java.awt.GraphicsConfiguration"/>
+<fullyQualifiedTypeName name="javax.media.j3d.Canvas3D"/>
+<fullyQualifiedTypeName name="com.sun.j3d.utils.universe.Viewer"/>
+<fullyQualifiedTypeName name="javax.swing.text.View"/>
+<fullyQualifiedTypeName name="javax.media.j3d.View"/>
+<fullyQualifiedTypeName name="com.sun.j3d.utils.applet.MainFrame"/>
+<fullyQualifiedTypeName name="java.applet.Applet"/>
+<fullyQualifiedTypeName name="java.awt.Frame"/>
+<fullyQualifiedTypeName name="java.awt.BorderLayout"/>
+<fullyQualifiedTypeName name="javax.media.j3d.TransformGroup"/>
+<fullyQualifiedTypeName name="javax.swing.JFrame"/>
 </qualifiedTypeNameHistroy>

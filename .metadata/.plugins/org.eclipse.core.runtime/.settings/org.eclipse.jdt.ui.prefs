@@ -1,4 +1,4 @@
-#Sun Sep 16 15:01:22 EEST 2012
+#Tue Sep 18 08:13:47 EEST 2012
 content_assist_proposals_foreground=26,26,26
 spelling_locale_initialized=true
 org.eclipse.jdt.ui.text.templates_migrated=true
@@ -16,5 +16,5 @@ content_assist_proposals_background=255,255,255
 content_assist_number_of_computers=13
 useQuickDiffPrefPage=true
 org.eclipse.jdt.ui.text.custom_templates=<?xml version\="1.0" encoding\="UTF-8" standalone\="no"?><templates/>
-content_assist_lru_history=<?xml version\="1.0" encoding\="UTF-8" standalone\="no"?><history maxLHS\="100" maxRHS\="10"><lhs name\="org.flysim.Simulator.Vector"><rhs name\="org.flysim.Simulator.Vector"/></lhs></history>
+content_assist_lru_history=<?xml version\="1.0" encoding\="UTF-8" standalone\="no"?><history maxLHS\="100" maxRHS\="10"><lhs name\="org.flysim.Simulator.Vector"><rhs name\="org.flysim.Simulator.Vector"/></lhs><lhs name\="javax.media.j3d.Group"><rhs name\="javax.media.j3d.TransformGroup"/></lhs><lhs name\="javax.media.j3d.Node"><rhs name\="javax.media.j3d.TransformGroup"/></lhs><lhs name\="javax.media.j3d.SceneGraphObject"><rhs name\="javax.media.j3d.TransformGroup"/></lhs><lhs name\="javax.media.j3d.TransformGroup"><rhs name\="javax.media.j3d.TransformGroup"/></lhs></history>
 org.eclipse.jdt.ui.text.code_templates_migrated=true

@@ -5,10 +5,14 @@ import org.flysim.Simulator.FlySensorsInterface;
 
 public class AI implements Runnable{
 	
+	private static final double RECALC_PERIOD = 0.05;
+
 	private FlyControlInterface control;
 	private FlySensorsInterface sensors;
 	
 	private double extTime;
+	private double selfTime;
+	private double lastTime = 0;
 
 	public AI(FlyControlInterface pControl, FlySensorsInterface pSensors) {
 		control = pControl;
@@ -25,6 +29,19 @@ public class AI implements Runnable{
 	private void getSituation() {
 		//System.out.println("AI getSituation");
 		extTime = sensors.getSystemTime();
+		//selfTime = System.currentTimeMillis()/1000.0;
+		while (lastTime + RECALC_PERIOD > extTime) {
+			long sleepTime = (long) ((lastTime + RECALC_PERIOD - extTime)*1000);
+			System.out.printf("AI sleep to %d ms, lastTime=%f extTime=%f\n", sleepTime, lastTime, extTime);
+			try {
+				Thread.sleep(sleepTime);
+			} catch (InterruptedException e) {
+				e.printStackTrace();
+			}
+			System.out.printf("AI wake up\n", sleepTime);
+			extTime = sensors.getSystemTime();
+		}
+		lastTime = extTime;
 	}
 	
 	private void calcControls() {
@@ -40,7 +57,7 @@ public class AI implements Runnable{
 			throttle = 50.1;
 		}
 		
-		if (tp>6)
+		if (tp>=8)
 		switch (tt) {
 		case 0:
 			elevator = 70;

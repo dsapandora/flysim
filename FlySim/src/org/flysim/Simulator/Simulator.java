@@ -2,6 +2,7 @@ package org.flysim.Simulator;
 
 public class Simulator implements Runnable, FlyControlInterface, FlySensorsInterface {
 	
+	private static final double RECALC_PERIOD = 0.05;
 	//Constants
 	public double mass = 1.0;	//kg
 	public double g = 9.8;		//m/s^2
@@ -73,7 +74,7 @@ public class Simulator implements Runnable, FlyControlInterface, FlySensorsInter
 	
 	public void calculateSituation() {
 		double dT = time - lastTimeCalc;
-		if (dT >= 0.05) {
+		if (dT >= RECALC_PERIOD) {
 			Vector f = new Vector((aileron - 50) / 50, (elevator - 50) / 50, ((throttle) / 50) * g);
 			
 			//(F_air_resistance) Far = -kr * V^2 - Assume, that air resistance proportional to square of velocity
@@ -86,7 +87,7 @@ public class Simulator implements Runnable, FlyControlInterface, FlySensorsInter
 			
 			accelerometer = a.mul(1/g); //Simulate accelerometer
 
-			System.out.printf("dT = %f, coord(%s), veloc(%s), accel(%s)\n",dT, position, velocity, a);
+			System.out.printf("T = %f, dT = %f, coord(%s), veloc(%s), accel(%s)\n", getSystemTime(), dT, position, velocity, a);
 			
 			velocity = velocity.plus(a.mul(dT)); //V = V0 + a*dt
 			position = position.plus(velocity.mul(dT)); //x = x0 + V*dt
@@ -95,6 +96,16 @@ public class Simulator implements Runnable, FlyControlInterface, FlySensorsInter
 			}
 			
 			lastTimeCalc = time;
+		} else {
+			try {
+				long sleeptime = (long) ((RECALC_PERIOD-dT)*1000);
+				//System.out.printf("Sim sleep to %d ms\n", sleeptime);
+				Thread.sleep(sleeptime);
+				//System.out.printf("Sim wake up\n", sleeptime);
+				
+			} catch (InterruptedException e) {
+				e.printStackTrace();
+			}
 		}
 
 	}
